@@ -9,13 +9,13 @@ pipeline{
         string(name: 'container_name', defaultValue: 'pagina_web', description: 'Nombre del contenedor de docker')
         string(name: 'image_name', defaultValue: 'pagina_img', description: 'Nombre de la imagen docker')
         string(name: 'tag_image', defaultValue: 'lts', description: 'tag de la imagen de la pagina')
-        string(name: 'container_port', defaultValue: 80, description: 'Puerto que usa el contenedor')
+        string(name: 'container_port', defaultValue: '80', description: 'Puerto que usa el contenedor')
     }
 
     stages{
         stage('install'){
             steps{
-                git branch: 'main', url: 'https://github.com/javilacu/repo_6.git'
+                git branch: 'develop', url: 'https://github.com/javilacu/repo_6.git'
                 dir('frontend'){
                     sh 'npm install'
                 }
