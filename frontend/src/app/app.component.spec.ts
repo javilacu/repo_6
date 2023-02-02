@@ -25,20 +25,4 @@ describe('AppComponent', () => {
     const app = fixture.componentInstance;
     expect(app.title).toEqual('frontend');
   });
-
-  it('suma 2+2 = 4', () => {
-    const suma = 2+2;
-    expect(suma).toBe(4);
-  });
-
-  it('suma 2+3 = 5', () => {
-    const suma = 2+3;
-    expect(suma).toBe(5);
-  });
-
-  it('suma 3+3 = 6', () => {
-    const suma = 3+3;
-    expect(suma).toBe(6);
-  });
-
 });
