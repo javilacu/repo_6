@@ -25,7 +25,6 @@ También se utilizarán las siguientes herramientas:
 - Docker
 - Framework Angular
 - Jenkins
-- AWS
 
 <h2> Enlaces a herramientas utilizadas </h2>
 
